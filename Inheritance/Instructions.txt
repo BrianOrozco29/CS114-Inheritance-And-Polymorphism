@@ -1,0 +1,61 @@
+(a) Inheritance (1 point)
+
+Design and implement a set of classes that define various types  of reading 
+material.
+
+Start by defining a parent class  called ReadingMaterial. This class  should contain
+the following instance variables :
+• title - a String  containing the title of the reading material
+• author - a String  containing the author of reading material
+• numPages - an integer  containing the number of pages in the reading material
+All three variables  should be initialized  with values  passed into the 
+constructor .
+
+ReadingMaterial should also have two functions:
+• isLong - takes no parameters  and returns a boolean . If the book has more
+than 250 pages, this function should return true . Otherwise it returns false .
+• summary - takes no parameters  and returns nothing. This function should
+print out information about the book in the form "[title], written by [author]".
+
+Three classes should inherit from Reading Material: Novel, GraphicNovel, and
+Article.
+
+The Novel class  should have the following specifications:
+• An instance variable  called characters  that contains an array  of Strings 
+with the names  of the principle characters  in the novel (this variable  should
+be initialized  with a value  passed into the constructor , along with the novel's
+title, author, and number of pages).
+• A function called listCharacters which prints out the name  of all the primary
+characters  in the order that they are listed, each on their own line.
+
+The Article class  should have the following specifications:
+• A String  instance variable  called publication that indicates which publication
+the article was published in. This should be initialized  in the constructor .
+• An overridden version of the summary function that prints out information about
+the article in the following form: 
+"[title], written by [author], published in [publication]"
+
+The GraphicNovel class  should inherit directly from the Novel class  and have
+the following specifications:
+• A String  instance variable  called illustrator that contains the
+name  of the person who illustrated the Graphic Novel. (This variable  should
+be initialized  with a value  passed into the constructor , along with the novel's
+title, author, and number of pages, and main characters .)
+• An overridden version of the summary function that prints out information
+about the book in the following form: 
+"[title], written by [author], illustrated by [illustrator]."
+
+
+Test the classes in a Driver class . Make one of each object :
+• A Novel, harryPotter, with the title Harry Potter, author JK Rowling, 303 pages, 
+and the main characters  Harry Potter, Hermione Granger, Ronald Weasley, and Voldemort.
+• A GraphicNovel, avengers, with the title Avengers, author Stan Lee,
+50 pages, the characters  Iron Man, Captain America, Black Widow, The Hulk, and Thor,
+and the illustrator Jack Kirby.
+• An Article, pc, with the title The Social Meaning of the Personal Computer, author
+Bryan Pfaffenberger, 10 pages, and the publication Anthropological Quarterly.
+
+In the Driver class , print out the summary of harryPotter, the result of harryPotter's
+isLong function, the list of characters  in avengers, the summary of avengers, 
+the result of pc's isLong function, and the summary of pc, with each item on its own 
+line.
