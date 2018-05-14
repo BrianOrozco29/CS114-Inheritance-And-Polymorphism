@@ -1,0 +1,26 @@
+(b) Polymorphism: (1 point)
+
+Implement the Speaker interface:
+
+public interface Speaker {
+public void speak();
+public void announce(String  str);
+}
+
+Then, create three classes that implement Speaker in various ways: 
+
+•	SpeakerOfTheHouse: speak method  prints "I am Speaker of the House.", and 
+the announce method  takes the name  of a bill in the form of a string 
+and prints it in the sentence "The [bill] has passed!"
+•	SportsAnnouncer: speak method  prints "Goal!", and the announce method 
+takes the name  of a team in the form of a string  and prints the sentence
+"The [team] have scored a goal!"
+•	Actor: speak method  prints "I've been nominated for three Academy 
+Awards.", and the announce method  takes the name  of a movie in the form
+of a string  and prints the sentence, "I'm currently staring in [movie]."
+
+
+Create a driver class , and in the main method , prompt the user to enter three
+Strings  -- the name  of a bill, the name  of a sports team, and the name  of a movie.
+Then, create an object  from each of the classes described above and call the speak 
+and announce methods  of each object , using the strings  provided by the user. 
