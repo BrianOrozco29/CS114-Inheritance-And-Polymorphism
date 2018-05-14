@@ -1,0 +1,9 @@
+(c) Using Classes in java Library (2 points)
+     (1) Write a program 
+•	to create a 2x10 two dimensional integer array.
+•	use Math.random() from java.util.Random to generate 20 integer numbers from 100 to 1000
+•	store each random number in the two dimensional array.
+•	At the end, print the array. Then switch numbers between two rows then print the array again.
+     (2) Design and implement an application that 
+•	Uses the Random function to generate eight uppercase characters 
+•	Concatenate all eight characters to a String.
